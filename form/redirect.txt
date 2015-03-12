@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>HTML Forms</title>
+<meta http-equiv="refresh" content="10; url=morganlondene.com" />
+</head>
+<body>
+
+<p>Thank you for filling out my form! You will be redirected shortly.
+</p>
+</body>
+</html>

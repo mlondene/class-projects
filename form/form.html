@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+</head>
+<title> Mass Comm. Opinion Form </title>
+<body>
+<form name="input" action="formmail.php" method="post">
+<input type="hidden" name="recipient" value='mel2@txstate.edu' />
+<input type="hidden" name="redirect" value="redirect.html" />
+<input type="hidden" name="required" value="name" />
+<input type="hidden" name="subject" value="My Form" />
+
+<p><h1>SJMC General Opinion Survey</h1></p>
+
+<p>Name: <input type="text" name="name" /></p>
+
+<p>Email: <input type="text" name="email" /></p>
+
+<p>
+Gender<br>
+<input type="radio" name="gender" value="male" />Male<br>
+<input type="radio" name="gender" value="female" />Female
+</p>
+
+<p>
+What is your Mass Communication concentration?<br>
+<input type="checkbox" name="concentration" value="Public Relations" />Public Relations<br>
+<input type="checkbox" name="concentration" value="Journalism" />Journalism<br>
+<input type="checkbox" name="concentration" value="Advertising" />Advertising<br>
+<input type="checkbox" name="concentration" value="Electronic Media" />Electronic Media<br>
+<input type="checkbox" name="concentration" value="General Mass Communication" />General Mass Communication<br>
+</p>
+
+<p>
+What year are you?<br>
+<select name="year">
+<option value="freshman">Freshman</option>
+<option value="sophomore">Sophomore</option>
+<option value="junior">Junior</option>
+<option value="senior">Senior</option>
+<option value="graduate">Graduate</option>
+</select>
+</p> 
+
+
+<p>
+Do you like SJMC?<br>
+<input type="radio" name="opinion" value="yes" />Yes<br>
+<input type="radio" name="opinion" value="no" />No
+</p>
+
+<p>What is your favorite thing about SJMC?<br> <textarea rows="4" cols="50"
+name=”message”></textarea></p>
+
+<p>What is something SJMC can improve on?<br> <textarea rows="4" cols="50"
+name=”message”></textarea></p>
+
+<p>
+<input type="submit" value="Submit"><input type="reset"
+value="Reset">
+</p>
+
+</form>
+</body>
+</html>

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Pluckers Sauce Quiz</title>
+<style>
+body {
+background-image: url("corkboard.jpeg");
+font-family: Helvetica;
+}
+
+#main {
+width: 60%;
+border: 1px gray solid;
+margin: auto;
+padding: 10px;
+background-color: beige;
+border-radius: 10px;
+}
+
+#header {
+margin-top: 0;
+border: 2px solid black;
+padding: 5px;
+height: 250px;
+background-image: url("background.jpg");
+font-family: Arial;
+}
+
+h1 {
+font-weight: bold;
+  color: #ffff00;
+  font-size: 32px;
+}
+
+h2 {
+	font-size: 18px;
+	}
+
+#fire {
+display: none;
+}
+#bakers {
+display: none;
+}
+#bbq {
+display: none;
+}
+#gochujang {
+display: none;
+}
+#ranch {
+display: none;
+}
+#buffalo {
+display: none;
+}
+</style>
+</head>
+<body>
+<div id="main">
+<div id="header"></div>
+<table>
+<form  id="form1" action=" "/>
+
+<p><h2>How would you rather spend your spare time?</h2></p>
+<p><input type="radio" name = "activity" id="hardcore" value="5" />Working out</p>
+<p><input type="radio" name = "activity" id="traditional" value="2" />Watching your favorite movie</p>
+<p><input type="radio" name = "activity" id="different" value="4" />Hanging out with friends</p>
+<p><input type="radio" name = "activity" id="cultured" value="3" />Traveling</p>
+<p><input type="radio" name = "activity" id="daring" value="5" />Sky diving</p>
+<p><input type="radio" name = "activity" id="weeney" value="1" />Sleeping</p>
+
+</br>
+
+<p><h2>What is your drink of choice?</h2></p>
+<p><input type="radio" name="drink" id="whiskey" value="6" />Whiskey on the rocks</p>
+<p><input type="radio" name="drink" id="jack" value="5" />Jack + Coke</p>
+<p><input type="radio" name="drink" id="pina" value="1" />Pina Colada</p>
+<p><input type="radio" name="drink" id="margarita" value="3" />Margarita</p>
+<p><input type="radio" name="drink" id="screwdriver" value="4" />Screwdriver</p>
+<p><input type="radio" name="drink" id="beer" value="2" />IPA Beer</p>
+
+</br>
+
+<p><h2>What's your favorite Pluckers side item?</h2></p>
+<p><input type="radio" name="side" id="waffle" value="4" />Waffle Fries</p>
+<p><input type="radio" name="side" id="macaroni" value="2" />Macaroni and Cheese</p>
+<p><input type="radio" name="side" id="chips" value="3" />Sweet Potato Fries</p>
+<p><input type="radio" name="side" id="salad" value="1" />Side Salad</p>
+<p><input type="radio" name="side" id="fries" value="6" />Buffalo Fries</p>
+<p><input type="radio" name="side" id="tots" value="5" />Tater Tots</p>
+
+<br />
+
+<p><h2>Which sport would you rather watch?</h2></p>
+<p><input type="radio" name="sport" id="baseball" value="4" />Baseball</p>
+<p><input type="radio" name="sport" id="football" value="5" />Football</p>
+<p><input type="radio" name="sport" id="rugby" value="6" />Rugby</p>
+<p><input type="radio" name="sport" id="handball" value="3" />Handball</p>
+<p><input type="radio" name="sport" id="pingpong" value="1" />Ping Pong</p>
+<p><input type="radio" name="sport" id="tennis" value="2" />Tennis</p>
+
+</br>
+
+<p><h2>Which social media outlet do you use the most?</h2></p>
+<p><input type="radio" name="social" id="snapchat" value="1" />Snapchat</p>
+<p><input type="radio" name="social" id="facebook" value="4" />Facebook</p>
+<p><input type="radio" name="social" id="insta" value="5" />Instagram</p>
+<p><input type="radio" name="social" id="tumblr" value="2" />Tumblr</p>
+<p><input type="radio" name="social" id="vine" value="6" />Vine</p>
+<p><input type="radio" name="social" id="twitter" value="3" />Twitter</p>
+
+</br>
+
+<p><h2>What type of trivia are you best at?</h2></p>
+<p><input type="radio" name="trivia" id="sports" value="5" />Sports</p>
+<p><input type="radio" name="trivia" id="world" value="3" />World</p>
+<p><input type="radio" name="trivia" id="movie" value="2" />Movie</p>
+<p><input type="radio" name="trivia" id="culture" value="4" />Pop Culture</p>
+<p><input type="radio" name="trivia" id="history" value="1" />History</p>
+<p><input type="radio" name="trivia" id="politics" value="6" />Politics</p>
+
+</br>
+
+<p><h2>What is your favorite ice cream topping?</h2></p>
+<p><input type="radio" name="topping" id="mallows" value="1" />Marshmallows</p>
+<p><input type="radio" name="topping" id="syrup" value="4" />Chocolate Syrup</p>
+<p><input type="radio" name="topping" id="nuts" value="5" />Nuts</p>
+<p><input type="radio" name="topping" id="fruit" value="3" />Fruit</p>
+<p><input type="radio" name="topping" id="bears" value="2" />Gummy Bears</p>
+<p><input type="radio" name="topping" id="fudge" value="6" />Hot Fudge</p>
+</br>
+<td><tr>
+<input type="submit" value="Submit">
+<p id="fire"><img src="fireinthehole.jpg"> </p>
+<p id="bakers"><img src="bakers.jpg"> </p>
+<p id="buffalo"><img src="buffalo.jpg"> </p>
+<p id="gochujang"><img src="gochujang.jpg"> </p>
+<p id="ranch"><img src="ranch.jpg"> </p>
+<p id="bbq"><img src="bbq.jpg"> </p>
+</tr></td>
+</form>
+</table>
+<p id="answer"></p>
+<p id="answer2"></p>
+</div>
+<script>  
+   activityvar = ['hardcore', 'traditional', 'different', 'cultured', 'daring', 'weeney'];
+   drinkvar = ['whiskey', 'jack', 'pina', 'margarita', 'screwdriver', 'beer'];
+   sidevar = ['waffle', 'macaroni', 'chips', 'salad', 'fries', 'tots'];
+   sportvar = ['baseball', 'football', 'rugby', 'handball', 'pingpong', 'tennis'];
+   socialvar = ['snapchat', 'facebook', 'insta', 'tumblr', 'vine', 'twitter'];
+   triviavar = ['sports', 'world', 'movie', 'culture', 'history', 'politics'];
+   toppingvar = ['mallows', 'syrup', 'nuts', 'fruit', 'bears', 'fudge'];
+    
+	   document.getElementById("form1").onsubmit=function() {
+	   for(i=0; i<activityvar.length; i++) {
+	   if (document.getElementById(activityvar[i]).checked) {
+	   activity = document.getElementById(activityvar[i]).value 
+	   }
+	   }//end for
+	   
+	   for(i=0; i<drinkvar.length; i++) {
+	   if (document.getElementById(drinkvar[i]).checked) {
+	   drink = document.getElementById(drinkvar[i]).value 
+	   }
+	   } //end for
+	   
+		for(i=0; i<sidevar.length; i++) {
+	   if (document.getElementById(sidevar[i]).checked) {
+	   side = document.getElementById(sidevar[i]).value 
+	   }
+	   }//end for
+	   
+		for(i=0; i<sportvar.length; i++) {
+	   if (document.getElementById(sportvar[i]).checked) {
+	   sport = document.getElementById(sportvar[i]).value 
+	   }
+	   }//end for
+	   
+	    for(i=0; i<socialvar.length; i++) {
+	   if (document.getElementById(socialvar[i]).checked) {
+	   social = document.getElementById(socialvar[i]).value 
+	   }
+	   }//end for
+	   
+	    for(i=0; i<triviavar.length; i++) {
+	   if (document.getElementById(triviavar[i]).checked) {
+	   trivia = document.getElementById(triviavar[i]).value 
+	   }
+	   }//end for
+	   
+	    for(i=0; i<toppingvar.length; i++) {
+	   if (document.getElementById(toppingvar[i]).checked) {
+	   topping = document.getElementById(toppingvar[i]).value 
+	   }
+	   }//end for
+	   
+	   total = parseInt(activity) + parseInt(drink) + parseInt(side) + parseInt(sport) + parseInt(social) + parseInt(trivia) + parseInt(topping);
+	   document.getElementById("answer").innerHTML = total;
+	   
+	   if(total <10){
+	   document.getElementById("ranch").style.display="block";
+}
+
+   if(total >=11 && total <18) {
+   document.getElementById("bakers").style.display="block";
+}
+
+if(total >=18 && total <25) {
+document.getElementById("gochujang").style.display="block";
+}
+
+if(total >=25 && total <32) {
+document.getElementById("buffalo").style.display="block";
+}
+
+if(total >=32 && total <37) {
+document.getElementById("bbq").style.display="block";
+}
+	
+	if(total >=38) {
+	document.getElementById("fire").style.display="block";
+}   
+	
+	
+	   
+	   return false; // required to not refresh the page; just leave this here
+	   }// end the submit function
+	
+   
+
+
+
+</script>
+
+
+</body>
+</html>
